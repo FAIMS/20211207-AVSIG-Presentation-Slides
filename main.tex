@@ -1,0 +1,207 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FAIMS3 Presentations
+% LaTeX Template
+% Version 1.0 (May 1, 2021)
+%
+% This template was created by:
+% Vel (enquiries@latextypesetting.com)
+% https://www.LaTeXTypesetting.com
+%
+%!TEX program = xelatex
+% Note: this template must be compiled with XeLaTeX rather than PDFLaTeX
+% due to the custom fonts used. The line above should ensure this happens
+% automatically, but if it doesn't, your LaTeX editor should have a simple toggle
+% to switch to using XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[
+	aspectratio=169, % Wide slides by default
+	12pt, % Default font size
+	t, % Top align all slide content
+]{beamer}
+
+\usepackage{academicons}
+\definecolor{orcidlogocol}{HTML}{A6CE39}
+
+\usetheme{faims} % Use the FAIMS beamer theme
+\usecolortheme{faims} % Use the FAIMS beamer color theme
+
+\bibliography{sample.bib} % BibLaTeX bibliography file
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 TITLE SLIDE
+%----------------------------------------------------------------------------------------
+
+\begin{titleframe} % Custom environment required for the title slide
+	\frametitle{Pragmatic vocabulary use}
+	
+    \framesubtitle{Data Collection Within Small Data Research Domains}
+	Brian Ballsun-Stanton
+
+    \medskip
+
+	Technical Co-Director, FAIMS Project
+
+    \href{https://orcid.org/0000-0003-4932-7912}{\textcolor{orcidlogocol}{\aiOrcid} \hspace{2mm} orcid.org/0000-0003-4932-7912}
+
+    \bigskip
+    
+    \textbf{Australian Vocabulary Special Interest Group}
+    
+	7 December 2021
+\end{titleframe}
+
+\begin{frame}
+	\frametitle{What is the FAIMS Project?}
+	\framesubtitle{Offline, multi-user, multi-entity, GIS-capable, data collection app}
+	
+\headinglevelone{A brief history}	
+\begin{itemize}
+    \item Started in 2011, FAIMS 2.6 last updated in 2016
+    \item 70 data collection workflows, $11,500$ data collection person-hours in the field
+    \item CSIRO On Prime Innovation Incubator Alumni
+    \item Building FAIMS3 for a 2022 release
+\end{itemize}
+
+\headinglevelone{FAIMS3 Development}	
+\begin{itemize}
+    \item Follow our progress on \href{https://faims.edu.au/news/}{faims.edu.au/news/}.
+    \item Demos early next year, just finishing up development leading to a private beta.
+    \item Looking for partners for vocab import and for export targets. Talk to me: brian@faims.edu.au
+\end{itemize}
+
+ 
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Value Propositions of Vocabularies}
+%	\framesubtitle{A Contrarian Look}
+
+\headinglevelone{Presentation pivot}	
+\begin{itemize}
+    \item Reading \href{https://markusstrasser.org/p/bcd8bded-7136-4bb4-8f97-e8a3a7b6d926/}{Strasser's retrospective} on business failures of automated attempts to read the literature \parencite*{Strasser2021-zx}
+    \item Looked at the YouTube archives of this group
+    \item `Build it and they will come' is not a sustainable strategy for adoption
+\end{itemize}
+
+\medskip
+
+\begin{exampleblock}{`Most knowledge necessary to make scientific progress is not online and not encoded.'}
+\parencite{Strasser2021-zx}
+					\end{exampleblock}
+
+
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{What have we done?}
+ 	\framesubtitle{FAIMS 2 and Vocabulary Support}
+
+\headinglevelone{Compatibility with their existing ways of working, in a hurry}
+
+\begin{itemize}
+    \item What did we build into our old software?
+    \item What do field researchers want from our vocabularies?
+    \item Researchers pay us for flexible recording systems that match their established ways of working
+    \item Most of what we build is published OSS on github.com/FAIMS for adaptation and building
+
+\end{itemize}
+
+\medskip
+
+\headinglevelone{Researchers using our software have not published data}
+
+As far as we can tell, only one group using FAIMS published data and credited our tool: CSIRO Mineral Resources  \parencite{Noble2017-lz}
+
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{What will we do?}
+ 	\framesubtitle{FAIMS 3 Plans}
+
+\headinglevelone{Development throughout this year and next}
+
+    \begin{itemize}
+        \item FAIMS3 is a ground up rewrite
+\item Addressing pain points with structured vocabularies
+\item No plans for advanced knowledge representations
+
+    \end{itemize}
+
+\headinglevelone{Support researchers first}
+
+Researchers vote with their feet -- our tool needs to be most responsive to their pain points. 
+
+\end{frame}
+
+
+
+\begin{frame}
+	\frametitle{Concluding thoughts}
+ 	\framesubtitle{Sneaking in FAIR Data on quiet cat feet}
+
+\headinglevelone{Sustainability}
+
+Building from the theory-downwards seldom addresses specific value propositions to those who would adopt software. Avoid being the 18th standard \parencite{Munroe2011-zg}.
+
+\headinglevelone{Direct benefit}
+
+We need to make sure the researchers are the primary beneficiaries of their work -- sophisticated knowledge encodings help future (and more technical) researchers
+
+\headinglevelone{Look for value propositions}
+
+Figure out what people are willing to pay for (in time or money) -- we were led astray by listening to what people said they wanted, and then never used.
+
+\end{frame}
+
+% %----------------------------------------------------------------------------------------
+% %	COLUMNS
+% %----------------------------------------------------------------------------------------
+
+% \begin{frame}
+% 	\frametitle{Using Columns}
+% 	\framesubtitle{Two Columns}
+
+% 	\begin{columns}[T]
+% 		\begin{column}{0.45\textwidth}
+% 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu feugiat velit, et tempus augue. Praesent porttitor arcu luctus, imperdiet urna iaculis, mattis eros. Pellentesque iaculis odio vel nisl ullamcorper, nec faucibus ipsum molestie. Sed dictum nisl non aliquet porttitor.
+% 		\end{column}
+		
+% 		\hfill
+
+% 		\begin{column}{0.45\textwidth}
+% 			Etiam vulputate arcu dignissim, finibus sem et, viverra nisl. Aenean luctus congue massa, ut laoreet metus ornare in. Nunc fermentum nisi imperdiet lectus tincidunt vestibulum at ac elit. Nulla mattis nisl eu malesuada suscipit.
+% 		\end{column}
+% 	\end{columns}
+% \end{frame}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+\begin{frame}[allowframebreaks] % 'allowframebreaks' allows automatic splitting across slides if the content is too long
+	\frametitle{Bibliography}
+
+	\printbibliography[heading=none]
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	CLOSING SLIDE
+%----------------------------------------------------------------------------------------
+
+\closingslide % Output closing slide, automatically populated with a background image
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
